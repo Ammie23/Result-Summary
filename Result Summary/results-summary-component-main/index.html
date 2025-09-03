@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+      <style>
+        body{
+            background-color: hsl(221, 100%, 96%);
+            font-family: 'Hanken Grotesk';
+        }
+
+        .wrapper{
+            box-sizing: border-box;
+            display: flex;
+            margin-top: 6pc; 
+            margin-left: 22pc; 
+            padding-bottom: 10px;     
+            background-color: white;
+            width: 46%;
+            height: 385px;
+            border-radius: 20px;
+            
+        }
+        .container1{
+            background: linear-gradient(to top, hsl(241, 85%, 63%), hsl(252, 50%, 37%));
+            color: #ccc;
+            width: 285px;
+            height: 380px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 1.5px;
+            margin: 10 auto;
+        }
+
+         .container2{
+            /* width: 500px; */
+            /* height: 100px; */
+            /* border-radius: 20px; */
+
+        }
+
+        h3{
+            font-size: 18px;
+            color: #303b59;
+        }
+
+        button{
+            background-color: #303b59;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 13px;
+            width: 78%;
+            cursor: pointer;
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+ 
+        button:hover{
+            background-color: #5f75b4;
+        }
+
+        .summary-list{
+           margin-left: 25px;
+            
+        }
+
+        .summary-sub{
+            display: flex;
+            width: 270px;
+            border-radius: 5px;
+            justify-content: center;
+            margin: 1rem;
+            
+        }
+
+        .summary-sub p{
+            font-weight: 600;
+        }
+
+        #sub1{
+            background-color: #fff6f6;
+            color: #ff5555;
+        }
+
+         #sub2{
+            background-color: #fffbf2;
+            color: #ffb21e;
+        }
+
+         #sub3{
+            background-color: #f2fbfa;
+            color: #00bb8f;
+        }
+
+         #sub4{
+            background-color: #f3f3fd;
+            color: #1125d4;
+        }
+
+        .sub{
+            margin-left: 120px; 
+        }
+
+        span{
+            color: #49557aef; 
+        }
+
+        .span1{
+            font-size: 50px;
+            color: hsl(0, 0%, 100%);
+            font-weight: 900;
+            position: relative;
+            top: 30px;
+        }
+
+        .span2{
+            color: #c4c4c45d;
+            position: relative;
+           top: 30px;
+        }
+
+        section{
+           width: 150px;
+           height: 150px;
+           border-radius: 50%;
+           background: linear-gradient(to top, hsl(241, 52%, 32%), hsl(252, 100%, 67%));
+           margin: 0 auto;
+           position: relative;
+        }
+        
+        .attribution{
+          margin: 20px;
+          font-size: 15px;
+        }
+
+        a{
+          text-decoration: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- First Container -->
+
+        <div class="container1">
+            <header>
+                <h4>Your Result</h4>
+            </header>
+
+            <section>
+                <span class="span1">76</span> <br>
+                <span class="span2">of 100</span>
+            </section>
+
+            <div class="section2">
+                <h2 style="color: white;">Great</h2>
+                <p>You scored higher than 65% of <br> 
+                the people who have taken <br>
+                these tests.</p>
+            </div>
+        </div>
+
+               <!-- Second Container -->
+
+        <div class="container2">
+            <header style="text-align: left; padding-left: 20px;">
+                <h3>Summary</h3>
+            </header>
+
+            <div class="summary-list">
+                <div id="sub1" class="summary-sub">
+                    <img src="/results-summary-component-main/assets/images/icon-reaction.svg">
+                    &nbsp; &nbsp;<p>Reaction</p>
+                    <p class="sub"><span>80 / 100</span></p>
+                </div>
+
+                <div id="sub2" class="summary-sub">
+                    <img src="/results-summary-component-main/assets/images/icon-memory.svg" alt="">
+                    &nbsp; &nbsp;<p>Memory</p>
+                    <p class="sub"><span>92 / 100</span></p>
+                </div>
+
+                <div id="sub3" class="summary-sub">
+                    <img src="/results-summary-component-main/assets/images/icon-verbal.svg" alt="">
+                    &nbsp; &nbsp;<p>Verbal</p>
+                    <p class="sub"><span>61 / 100</span></p>
+                </div>
+
+                <div id="sub4" class="summary-sub">
+                    <img src="/results-summary-component-main/assets/images/icon-visual.svg" alt="">
+                    &nbsp; &nbsp;<p>Visual</p>
+                    <p class="sub"><span>73 / 100</span></p>
+                </div>
+            </div>
+
+            <button>Continue</button>
+
+            
+        </div>
+    </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Amarachi Samuel</a>.
+  </div>
+</body>
+</html>
